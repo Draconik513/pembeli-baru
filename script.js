@@ -35,11 +35,11 @@ document.addEventListener(
 async function initMic() {
   try {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    micStatus.textContent = "🎤 Microphone is active. Blow to extinguish!";
+    micStatus.textContent = "🎤 Microphone active. tiup lilin!";
     detectBlow(stream);
   } catch (err) {
     micStatus.textContent =
-      "🚫 Microphone access denied. Please allow microphone access to blow the candle.";
+      "🚫 Microphone akses ditolak. tolong izinkan Microphone  untuk meniup lilin.";
     console.error("Error accessing microphone:", err);
   }
 }
@@ -139,3 +139,4 @@ function extinguishFlame() {
 
 
 window.onload = initMic;
+
