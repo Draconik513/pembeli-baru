@@ -12,7 +12,7 @@ let micSource;
 let isExtinguished = false;
 let blowDetectedTimer; // Untuk melacak durasi tiupan
 const BLOW_THRESHOLD_VOLUME = 10; // Volume minimum untuk dianggap tiupan
-const SUSTAINED_BLOW_DURATION = 1000; // Durasi tiupan (ms) agar api padam
+const SUSTAINED_BLOW_DURATION = 700 ; // Durasi tiupan (ms) agar api padam
 const PARTICLE_EMIT_INTERVAL = 55; // Interval emisi partikel saat ditiup (ms)
 let particleInterval; // Variabel untuk menyimpan interval emisi partikel
 
